@@ -26,5 +26,23 @@ namespace LoginPrueba
         {
 
         }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            string usuario = tboxUsuario.Text;
+            string clave = tboxClave.Text;
+
+            // Instanciamos un obj de tipo Usuario
+            BBL.Usuario unLogin = new BBL.Usuario();
+
+            if (unLogin.Loguearse(usuario, clave))
+            {
+                MessageBox.Show("Inicio sesion correctamente");
+            } else
+            {
+                MessageBox.Show("Error al iniciar sesion");
+            }
+
+        }
     }
 }

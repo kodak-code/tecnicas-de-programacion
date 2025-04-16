@@ -54,11 +54,12 @@
             this.btnIniciarSesion.TabIndex = 1;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(150, 81);
+            this.label1.Location = new System.Drawing.Point(256, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 2;
@@ -67,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(150, 174);
+            this.label2.Location = new System.Drawing.Point(256, 179);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 3;
@@ -75,14 +76,14 @@
             // 
             // tboxUsuario
             // 
-            this.tboxUsuario.Location = new System.Drawing.Point(307, 81);
+            this.tboxUsuario.Location = new System.Drawing.Point(413, 86);
             this.tboxUsuario.Name = "tboxUsuario";
             this.tboxUsuario.Size = new System.Drawing.Size(143, 26);
             this.tboxUsuario.TabIndex = 4;
             // 
             // tboxClave
             // 
-            this.tboxClave.Location = new System.Drawing.Point(307, 174);
+            this.tboxClave.Location = new System.Drawing.Point(413, 179);
             this.tboxClave.Name = "tboxClave";
             this.tboxClave.PasswordChar = '*';
             this.tboxClave.Size = new System.Drawing.Size(143, 26);
