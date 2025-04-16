@@ -1,7 +1,7 @@
 .vs/
-*.user
-*.suo
-*.cache
-*.log
-bin/
-obj/
+BBL/bin/
+BBL/obj/
+DAL/bin/
+DAL/obj/
+LoginPrueba/bin/
+LoginPrueba/obj/
