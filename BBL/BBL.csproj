@@ -45,6 +45,10 @@
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{fd615bb3-7851-4b3b-96ef-80da6ec9b573}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{19fdde37-b8a0-4f57-af8d-7418587935ad}</Project>
       <Name>DAL</Name>

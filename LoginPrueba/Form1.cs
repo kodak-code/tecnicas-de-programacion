@@ -37,7 +37,8 @@ namespace LoginPrueba
 
             if (unLogin.Loguearse(usuario, clave))
             {
-                MessageBox.Show("Inicio sesion correctamente");
+                Form formularioCrearUsuario = new Administracion.CrearUsuario();
+                formularioCrearUsuario.Show();
             } else
             {
                 MessageBox.Show("Error al iniciar sesion");

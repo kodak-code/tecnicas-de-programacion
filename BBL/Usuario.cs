@@ -7,53 +7,39 @@ using System.Threading.Tasks;
 
 namespace BBL
 {
+    
     public class Usuario
     {
-		private string _userName;
 
-		public string UserName
+        public bool CrearUsuario(BE.Usuario usuario)
+        {
+            DAL.Usuario dalUsuario = new DAL.Usuario();
+            dalUsuario.Crear(usuario);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Valida el usuario y clave con los datos en la bd
+        /// </summary>
+        /// <param name="usuario">Nombre del usuario pasado por parametro</param>
+        /// <param name="clave">Clave del usuario pasado por parametro</param>
+        /// <returns></returns>
+
+        public bool Loguearse (string usuario, string clave)
 		{
-			get { return _userName; }
-			set { _userName = value; }
-		}
+			DAL.Usuario dalUsuario = new DAL.Usuario();
 
-		private string _clave;
+			List<BE.Usuario> usuarios = dalUsuario.Listar();
 
-		public string Clave
-		{
-			get { return _clave; }
-			set { _clave = value; }
-		}
-
-		private string _email;
-
-		public string Email
-		{
-			get { return _email; }
-			set { _email = value; }
-		}
-
-		private int _DNI;
-
-		public int DNI
-		{
-			get { return _DNI; }
-			set { _DNI = value; }
-		}
-
-		public bool Loguearse (string usuario, string clave)
-		{
-			DAL.Usuario unLogin = new DAL.Usuario();
-
-			DataTable dt = unLogin.IniciarSesion();
-
-			foreach(DataRow fila in dt.Rows)
-			{
-				if (fila["usuario"].ToString() == usuario && fila["clave"].ToString() == clave)
+            foreach (BE.Usuario unUsuario in usuarios)
+            {
+                if(unUsuario.Clave == clave.Trim() && unUsuario.UserName == usuario.Trim())
                 {
                     return true;
                 }
             }
+
             return false;
         }
 	}
