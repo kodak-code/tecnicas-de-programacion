@@ -12,6 +12,7 @@ namespace LoginPrueba
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
+        //jojola
         static void Main()
         {
             Application.EnableVisualStyles();
