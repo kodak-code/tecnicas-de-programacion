@@ -49,7 +49,7 @@ namespace BBL
 
 			foreach(DataRow fila in dt.Rows)
 			{
-				if (fila["usuario"].ToString() == usuario && fila["clave"].ToString() == clave)
+				if (fila["usuario"].ToString().Trim() == usuario.Trim() && fila["clave"].ToString().Trim() == clave.Trim())
                 {
                     return true;
                 }
