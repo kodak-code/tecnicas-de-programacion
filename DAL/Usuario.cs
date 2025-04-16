@@ -13,7 +13,7 @@ namespace DAL
         {
             Conexion conexion = new Conexion();
 
-            DataTable dt = conexion.LeerPorComando("SELECT * FROM TB_MEDICAMENTOS");
+            DataTable dt = conexion.LeerPorComando("SELECT * FROM [Universidad].[dbo].[Usuario]");
 
             return dt;
         }
