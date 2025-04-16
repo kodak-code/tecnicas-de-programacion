@@ -1,0 +1,6 @@
+C:\.NET\Clase03\LoginPrueba\BE\bin\Debug\BE.dll
+C:\.NET\Clase03\LoginPrueba\BE\bin\Debug\BE.pdb
+C:\.NET\Clase03\LoginPrueba\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\.NET\Clase03\LoginPrueba\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\.NET\Clase03\LoginPrueba\BE\obj\Debug\BE.dll
+C:\.NET\Clase03\LoginPrueba\BE\obj\Debug\BE.pdb
